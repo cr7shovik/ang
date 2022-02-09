@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <h2>Companies Watch List</h2>
+    <div *ngIf="companies == null || companies.length==0">
+        <h3>No company stock prices added to watch list</h3>
+    </div>
+    <div class="row" *ngIf="companies != null && companies.length != 0">
+        <div class=" col-lg-3"  *ngFor = "let company of companies">
+            <app-company-details [companyDetails] = "company" [showRemoveButton] = "removeOn" [showWatchButton]="watchOff"></app-company-details>
+        </div>
+    </div>
+</div>

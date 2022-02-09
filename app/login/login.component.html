@@ -1,0 +1,27 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+<div class="container-fluid">
+    <h3>Let's get started by login</h3>
+    <span style="color:red;font-size: 11px;">Fields marked with * are mandatory</span>
+    <div *ngIf="loginForm.get('email')?.pristine && isSubmitted">
+        <span style="color: red;">* Email is required</span>
+    </div>
+    <div *ngIf="loginForm.get('password')?.pristine && isSubmitted">
+        <span style="color: red;">* Password is required</span>
+    </div>
+    <div *ngIf="(loginForm.get('password')?.invalid || loginForm.get('email')?.invalid) && isSubmitted">
+        <span style="color: red;">* Invalid username/password</span>
+    </div>
+    <div class="row">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit();" class="col-lg-4">
+            <label for="email" class="form-label">Email address<span style="color:red;font-size: 11px;">*</span></label>
+            <input type="email" formControlName="email" class="form-control" required name="email">
+            <label for="password" class="form-label">Password<span style="color:red;font-size: 11px;">*</span></label>
+            <input type="password" formControlName="password" class="form-control" id="password" required>
+            <br />
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
