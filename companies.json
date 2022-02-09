@@ -1,0 +1,130 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "CompanyCode": 1,
+      "CompanyName": "Wipro",
+      "BriefDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "CurrentStockPrice": 500
+    },
+    {
+      "id": 2,
+      "CompanyCode": 2,
+      "CompanyName": "Hewlett Packard",
+      "BriefDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "CurrentStockPrice": 800
+    },
+    {
+      "id": 3,
+      "CompanyCode": 3,
+      "CompanyName": "Cognizant",
+      "BriefDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "CurrentStockPrice": 1000
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "UserId": 1,
+      "Email": "abc@abc.com",
+      "Password": "abc"
+    },
+    {
+      "id": 2,
+      "UserId": 2,
+      "Email": "xyz@abc.com",
+      "Password": "xyz"
+    },
+    {
+      "id": 3,
+      "UserId": 3,
+      "Email": "def@abc.com",
+      "Password": "def"
+    }
+  ],
+  "watch": [
+    {
+      "id": 1,
+      "Companies": [
+        {
+          "id": 2,
+          "CompanyCode": 2,
+          "CompanyName": "Hewlett Packard",
+          "BriefDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+          "CurrentStockPrice": 800
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Companies": [
+        {
+          "id": 3,
+          "CompanyCode": 3,
+          "CompanyName": "Cognizant",
+          "BriefDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+          "CurrentStockPrice": 1000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Companies": [
+        {
+          "id": 3,
+          "CompanyCode": 3,
+          "CompanyName": "Cognizant",
+          "BriefDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+          "CurrentStockPrice": 1000
+        }
+      ]
+    }
+  ],
+  "stock": [
+    {
+      "Date": "2020-01-31T18:30:00.000Z",
+      "CompanyName": "Wipro",
+      "StockPrice": 500
+    },
+    {
+      "Date": "2020-01-31T18:30:00.000Z",
+      "CompanyName": "Cognizant",
+      "StockPrice": 600
+    },
+    {
+      "Date": "2020-01-31T18:30:00.000Z",
+      "CompanyName": "Hewlett Packard",
+      "StockPrice": 300
+    },
+    {
+      "Date": "2020-02-29T18:30:00.000Z",
+      "CompanyName": "Wipro",
+      "StockPrice": 525
+    },
+    {
+      "Date": "2020-02-29T18:30:00.000Z",
+      "CompanyName": "Cognizant",
+      "StockPrice": 610
+    },
+    {
+      "Date": "2020-02-29T18:30:00.000Z",
+      "CompanyName": "Hewlett Packard",
+      "StockPrice": 420
+    },
+    {
+      "Date": "2020-03-31T18:30:00.000Z",
+      "CompanyName": "Wipro",
+      "StockPrice": 550
+    },
+    {
+      "Date": "2020-03-31T18:30:00.000Z",
+      "CompanyName": "Cognizant",
+      "StockPrice": 595
+    },
+    {
+      "Date": "2020-03-31T18:30:00.000Z",
+      "CompanyName": "Hewlett Packard",
+      "StockPrice": 450
+    }
+  ]
+}
